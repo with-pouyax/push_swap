@@ -35,7 +35,7 @@ void	check_valid_chars(t_node **node, char *arg)
 
 void	check_leading_zero_negative(t_node **node, char *arg)
 {
-	if (arg[0] == '-' && arg[1] == '0' && ft_isdigit(arg[2]))
+	if (arg[0] == '-' && arg[1] == '0')
 	{
 		error_exit(node, NULL);
 	}
