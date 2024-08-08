@@ -50,7 +50,7 @@ int	process_argument(t_node **node, char *arg)
 	original_arg = arg;
 	check_leading_zero_negative(node, arg);
 	len = ft_strlen(arg);
-	num = ft_atoi(arg);
+	num = ft_atoi(arg); //change the name of this function to atol
 	check_length(node, len);
 	check_number_range(node, num);
 	check_valid_chars(node, arg);
