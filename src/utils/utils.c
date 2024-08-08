@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 12:29:05 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 15:52:33 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 12:05:05 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ long	convert_to_long(const char *nptr, int i, int sign)
 	return (r * sign);
 }
 
-long	ft_atoi(const char *nptr)
+long	ft_atol(const char *nptr)
 {
 	int		i;
 	int		sign;
@@ -77,8 +77,6 @@ long	ft_atoi(const char *nptr)
 	}
 	return (convert_to_long(nptr, i, sign));
 }
-
-
 
 size_t	ft_strlen(const char *s)
 {

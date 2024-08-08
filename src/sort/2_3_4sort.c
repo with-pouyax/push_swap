@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 13:05:02 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 13:14:31 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 11:57:28 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_2_sort(t_node **stack_a)
 	if ((*stack_a)->data > (*stack_a)->next->data)
 		sa(stack_a);
 }
-
 
 void	check_and_sort(t_node **stack_a, int order1, int order2, int order3)
 {
@@ -57,7 +56,6 @@ void	ft_3_sort(t_node **stack_a)
 void	ft_4_sort(t_node **stack_a, t_node **stack_b)
 {
 	order_nodes(*stack_a, 4);
-
 	if ((*stack_a)->order == 1)
 		pb(stack_a, stack_b);
 	else if ((*stack_a)->next->order == 1)

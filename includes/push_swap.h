@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 11:11:31 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 17:06:43 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 11:45:15 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,15 +72,10 @@ void	check_length(t_node **node, int len);
 void	check_number_range(t_node **node, long num);
 void	check_valid_chars(t_node **node, char *arg);
 void	skip_leading_zeros(char **arg, int *len);
-
-//-----------------
 void	free_stack(t_node **stack);
 void	error_exit(t_node **stack_a, t_node **stack_b);
-long	ft_atoi(const char *nptr);
+long	ft_atol(const char *nptr);
 size_t	ft_strlen(const char *s);
-
 void	check_leading_zero_negative(t_node **node, char *arg);
-
-
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 11:30:02 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 11:33:07 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 11:52:26 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ void	rb(t_node **stack_b)
 
 	if (*stack_b == NULL || (*stack_b)->next == NULL)
 		return ;
-
 	first = *stack_b;
 	last = first;
 	while (last->next != NULL)

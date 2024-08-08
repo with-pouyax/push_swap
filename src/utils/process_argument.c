@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 11:39:35 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 17:06:53 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 12:07:53 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int	process_argument(t_node **node, char *arg)
 	original_arg = arg;
 	check_leading_zero_negative(node, arg);
 	len = ft_strlen(arg);
-	num = ft_atoi(arg); //change the name of this function to atol
+	num = ft_atol(arg);
 	check_length(node, len);
 	check_number_range(node, num);
 	check_valid_chars(node, arg);
@@ -60,7 +60,6 @@ int	process_argument(t_node **node, char *arg)
 		return (1);
 	return (0);
 }
-
 
 void	split_and_process(t_node **head, char *str)
 {
@@ -85,6 +84,4 @@ void	split_and_process(t_node **head, char *str)
 		*end = temp;
 		start = end;
 	}
-	assign_indexes(*head);
 }
-

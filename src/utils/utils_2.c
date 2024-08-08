@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 12:16:05 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 14:57:04 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 12:05:34 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ int	push(t_node **node, int value)
 	new_node->data = value;
 	new_node->next = NULL;
 	new_node->prev = NULL;
-
 	if (!*node)
 		*node = new_node;
 	else

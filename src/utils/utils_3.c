@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 12:36:43 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 16:31:43 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 12:08:55 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,3 @@ void	error_exit(t_node **stack_a, t_node **stack_b)
 	write(2, "Error\n", 6);
 	exit(EXIT_FAILURE);
 }
-
-

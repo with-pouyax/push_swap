@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 14:08:46 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 14:14:53 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 11:59:29 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,6 @@ int	order_nodes(t_node *stack, int size)
 	nodes = (t_node **)malloc(sizeof(t_node *) * size);
 	if (nodes == NULL)
 		return (-1);
-
 	result = fill_nodes_array(stack, nodes, size);
 	if (result == -1)
 	{

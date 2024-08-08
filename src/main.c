@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 11:20:06 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/01 11:24:54 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/08 11:46:36 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int	main(int ac, char **av)
 	t_node	*stack_a;
 	t_node	*stack_b;
 
-
 	stack_a = NULL;
 	stack_b = NULL;
 	i = 1;
@@ -57,4 +56,3 @@ int	main(int ac, char **av)
 	free_stack(&stack_b);
 	return (0);
 }
-
