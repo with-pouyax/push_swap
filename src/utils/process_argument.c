@@ -6,7 +6,7 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 11:39:35 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/08 12:07:53 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/09 16:50:31 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,9 @@ void	split_and_process(t_node **head, char *str)
 	char	*end;
 	char	temp;
 
+	if (str == NULL || ft_strlen(str) == 0 || \
+	ft_strspn(str, " \t\n\v\f\r") == ft_strlen(str))
+		error_exit(head, NULL);
 	start = str;
 	while (*start)
 	{

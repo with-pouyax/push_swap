@@ -6,18 +6,16 @@
 /*   By: pghajard <pghajard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 11:11:31 by pghajard          #+#    #+#             */
-/*   Updated: 2024/08/08 11:45:15 by pghajard         ###   ########.fr       */
+/*   Updated: 2024/08/09 16:58:15 by pghajard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
-# include <string.h>
 
 typedef struct s_node
 {
@@ -77,5 +75,6 @@ void	error_exit(t_node **stack_a, t_node **stack_b);
 long	ft_atol(const char *nptr);
 size_t	ft_strlen(const char *s);
 void	check_leading_zero_negative(t_node **node, char *arg);
+size_t	ft_strspn(const char *str1, const char *str2);
 
 #endif
