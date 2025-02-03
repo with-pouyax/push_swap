@@ -127,7 +127,7 @@ The time complexity of Radix Sort is
 \[O(n \cdot k)
 \]
 
-where:
+where: 
 
 - `n` is the number of elements in the list.
 - `k` is the number of bits in the largest number (i.e., the number of iterations required).
